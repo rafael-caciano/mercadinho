@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilos básicos para a página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Esconder checkbox */
+#menu-toggle {
+    display: none;
+}
+
+/* Estilo do ícone do menu hambúrguer */
+.menu-icon {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transition: left 0.3s ease-in-out;
+}
+
+/* Estilo da lista de navegação */
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: -250px; /* Inicialmente fora da tela */
+    width: 200px; /* Ajuste a largura conforme necessário */
+    height: 100%;
+    background-color: #333;
+    transition: left 0.3s ease-in-out;
+}
+
+/* Exibir a lista de navegação quando o checkbox está marcado */
+#menu-toggle:checked + .menu-icon + .menu {
+    left: 0; /* Traz o menu para a vista */
+}
+
+/* Mover o ícone do menu junto com o menu */
+#menu-toggle:checked + .menu-icon {
+    left: 210px; /* Ajuste a posição do ícone quando o menu está aberto */
+    content: '\2190'; /* Alterar ícone para seta apontando para a esquerda */
+}
+
+/* Estilo dos itens da lista de navegação */
+.menu li {
+    border-bottom: 1px solid #444;
+}
+
+/* Estilo dos links da navegação */
+.menu li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+}
+
+/* Estilo dos links ao passar o mouse */
+.menu li a:hover {
+    background-color: #555;
+}
+
+/* Ajustes para visualização mobile */
+@media (min-width: 768px) {
+    .menu-icon {
+        display: none;
+    }
+
+    .menu {
+        position: static;
+        display: flex;
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        flex-direction: row;
+    }
+
+    .menu li {
+        border: none;
+    }
+
+    .menu li a {
+        padding: 15px;
+        color: black;
+    }
+}
+
+/* Estilo para o ícone centralizado no cabeçalho */
+.header-icon {
+    
+    font-size: 36px; /* Tamanho do ícone */
+    text-align: center; /* Centralizar o ícone */
+    margin-top: 20px; /* Espaçamento superior */
+}
+
+.icon-centro{
+    max-height: 40px;
+}
+
+/* Estilos para o conteúdo */
+.content-box {
+    display: flex;
+    align-items: flex-start;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.content-image {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin-right: 20px;
+    max-height: 60px;
+    
+}
+
+.content-text {
+    max-width: 600px;
+}
+
+.content-text h2 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+}
+
+.content-text p {
+    margin: 0;
+    font-size: 14px;
+}
