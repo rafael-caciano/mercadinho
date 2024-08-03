@@ -10,6 +10,14 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: whitesmoke;
+}
+
+header{
+    background-color: #13678A;
+    height: 75px;
+    display: flex;
+    justify-content: center;
 }
 
 /* Esconder checkbox */
@@ -39,8 +47,12 @@ body {
     left: -250px; /* Inicialmente fora da tela */
     width: 200px; /* Ajuste a largura conforme necessário */
     height: 100%;
-    background-color: #333;
+    background-color: #012030;
     transition: left 0.3s ease-in-out;
+}
+
+.menu-icon{
+    color: #fff;
 }
 
 /* Exibir a lista de navegação quando o checkbox está marcado */
@@ -69,7 +81,7 @@ body {
 
 /* Estilo dos links ao passar o mouse */
 .menu li a:hover {
-    background-color: #555;
+    background-color: #13678A;
 }
 
 /* Ajustes para visualização mobile */
@@ -102,29 +114,86 @@ body {
     
     font-size: 36px; /* Tamanho do ícone */
     text-align: center; /* Centralizar o ícone */
-    margin-top: 20px; /* Espaçamento superior */
+    margin-top: 18px; /* Espaçamento superior */
+    
 }
 
 .icon-centro{
     max-height: 40px;
 }
 
-/* Estilos para o conteúdo */
-.content-box {
-    display: flex;
-    align-items: flex-start;
-    margin: 20px 0;
-    padding: 10px;
+
+.mercadinho-sec{
+    text-align: center;
+    margin-top: 50px;
 }
 
+/* Estilo para a imagem do banner */
+.banner-image {
+    text-align: center;
+    margin: 0px 0;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.456);
+}
+
+.banner-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.texto-intro{
+    text-align: center;
+    padding: 20px;
+    
+    
+}
+.texto-intro p{
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.texto-intro h2{
+    margin-bottom: 30px;
+    background-color: orange;
+}
+
+.texto-cx{
+    background-color:#45C4B0 ;
+    padding: 5px;
+    margin: 5px;
+}
+
+.texto-cx-p{
+    display: flex;
+    text-align: justify;
+}
+
+/* Estilos para o conteúdo */
+.content-box {
+    border-radius: 8px;
+    
+    display: flex;
+    align-items: flex-start;
+    margin: 20px ;
+    padding: 10px;
+    background-color: #37b0e4;
+
+    
+}
+
+
+
 .content-image {
-    width: 150px;
-    height: 150px;
+    height: 200px;
     object-fit: contain;
     margin-right: 20px;
     max-height: 60px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    
     
 }
+
 
 .content-text {
     max-width: 600px;
