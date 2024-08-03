@@ -109,6 +109,20 @@ body {
     max-height: 40px;
 }
 
+
+/* Estilo para a imagem do banner */
+.banner-image {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.banner-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
 /* Estilos para o conteúdo */
 .content-box {
     display: flex;
